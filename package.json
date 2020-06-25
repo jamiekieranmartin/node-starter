@@ -1,0 +1,22 @@
+{
+  "name": "node-starter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start:dev": "npx nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .js",
+    "lint-and-fix": "eslint . --ext .js --fix",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write",
+    "prettier-watch": "onchange 'src/**/*.js' -- prettier --write {{changed}}"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "onchange": "^7.0.2",
+    "prettier": "^2.0.5"
+  }
+}
